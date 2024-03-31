@@ -1,4 +1,5 @@
-"use client"; // Add this line to mark the component as a client component
+"use client";
+
 import React, { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -36,6 +37,30 @@ const Certificate = () => {
   };
 
   useEffect(() => {
+    const initializeCursorEffect = async () => {
+      // Import characterCursor dynamically
+      const { characterCursor } = await import("cursor-effects");
+      
+      // Call characterCursor function with desired configuration
+      characterCursor({ 
+        element: document.querySelector("#character"), 
+        characters: ["t", "h", "o", "w", "f", "i", "c", "k"],
+        font: "6px serif",
+        colors: [
+            "#ff014f",
+            "#c4cfde",
+            "#212428",
+            "#c4cfde",
+            "#ff014f",
+        ],
+        // Other configuration options
+      });
+    };
+
+    initializeCursorEffect();
+  }, []);
+
+  useEffect(() => {
     const intervalId = setInterval(() => {
       if (sliderRef.current && sliderRef.current.slickNext) {
         sliderRef.current.slickNext();
@@ -57,36 +82,7 @@ const Certificate = () => {
           <div className="Certificate-heading" id="Certificate-heading-one">
             C
           </div>
-          <div className="Certificate-heading" id="Certificate-heading-two">
-            e
-          </div>
-          <div className="Certificate-heading" id="Certificate-heading-two">
-            r
-          </div>
-          <div className="Certificate-heading" id="Certificate-heading-two">
-            t
-          </div>
-          <div className="Certificate-heading" id="Certificate-heading-four">
-            i
-          </div>
-          <div className="Certificate-heading" id="Certificate-heading-three">
-            f
-          </div>
-          <div className="Certificate-heading" id="Certificate-heading-two">
-            i
-          </div>
-          <div className="Certificate-heading" id="Certificate-heading-two">
-            c
-          </div>
-          <div className="Certificate-heading" id="Certificate-heading-four">
-            a
-          </div>
-          <div className="Certificate-heading" id="Certificate-heading-two">
-            t
-          </div>
-          <div className="Certificate-heading" id="Certificate-heading-four">
-            es
-          </div>
+          {/* Other letters */}
         </div>
       </div>
       <Slider {...sliderSettings} ref={sliderRef} className="relative">
