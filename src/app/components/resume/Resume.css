@@ -1,0 +1,150 @@
+.resumehover-light {
+    background: #191b1e;
+    background: -moz-linear-gradient(-45deg, #191b1e 0%, #191b1e 5%, #191b1e 5%, #191b1e 42%, #ff014f 49%, #ff014f 53%, #191b1e 59%, #191b1e 100%);
+    background: -webkit-linear-gradient(-45deg, #191b1e 0%, #191b1e 5%, #191b1e 5%, #191b1e 42%, #ff014f 49%, #ff014f 53%, #191b1e 59%, #191b1e 100%);
+    background: linear-gradient(135deg, #191b1e 0%, #191b1e 5%, #191b1e 5%, #191b1e 42%, #ff014f 49%, #ff014f 53%, #191b1e 59%, #191b1e 100%);
+    background-repeat: no-repeat;
+    background-position: 0px;
+    background-size: 280%;
+  }
+  
+  .resumehover-light:hover {
+    animation: resumehover-light 1.3s;
+    -webkit-animation: resumehover-light 1.3s;
+  }
+  
+  @keyframes resumehover-light {
+    0% {
+      background-position: -960px;
+    }
+    100% {
+      background-position: 0px;
+    }
+  }
+  
+  @-webkit-keyframes resumehover-light {
+    0% {
+      background-position: -960px;
+    }
+    100% {
+      background-position: 0px;
+    }
+  }
+  
+
+  @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+       
+
+
+        .myresume-title-container {
+            width: 100%;
+            margin: auto;
+            font-weight: 700;
+           
+            text-align: center;
+            padding: 0 0 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            color: #c4cfde;
+            word-wrap: break-word;
+        }
+
+        .myresume-title {
+            font-size: 50px;
+            margin: 100px 0 0;
+            
+        }
+
+        .myresume-title span {
+            display: inline-block;
+        }
+
+        .myresume-title span:nth-of-type(2) {
+            animation-delay: .05s;
+        }
+        .myresume-title span:nth-of-type(3) {
+            animation-delay: .1s;
+        }
+        .myresume-title span:nth-of-type(4) {
+            animation-delay: .15s;
+        }
+        .myresume-title span:nth-of-type(5) {
+            animation-delay: .2s;
+        }
+        .myresume-title span:nth-of-type(6) {
+            animation-delay: .25s;
+        }
+        .myresume-title span:nth-of-type(7) {
+            animation-delay: .3s;
+        }
+        .myresume-title span:nth-of-type(8) {
+            animation-delay: .35s;
+        }
+        .myresume-title span:nth-of-type(9) {
+            animation-delay: .4s;
+        }
+        .myresume-title span:nth-of-type(10) {
+            animation-delay: .45s;
+        }
+        .myresume-title span:nth-of-type(11) {
+            animation-delay: .5s;
+        }
+        .myresume-title span:nth-of-type(12) {
+            animation-delay: .55s;
+        }
+        .myresume-title span:nth-of-type(13) {
+            animation-delay: .6s;
+        }
+        .myresume-title span:nth-of-type(14) {
+            animation-delay: .65s;
+        }
+        .myresume-title span:nth-of-type(15) {
+            animation-delay: .7s;
+        }
+        .myresume-title span:nth-of-type(16) {
+            animation-delay: .75s;
+        }
+        .myresume-title span:nth-of-type(17) {
+            animation-delay: .8s;
+        }
+        .myresume-title span:nth-of-type(18) {
+            animation-delay: .85s;
+        }
+        .myresume-title span:nth-of-type(19) {
+            animation-delay: .9s;
+        }
+        .myresume-title span:nth-of-type(20) {
+            animation-delay: .95s;
+        }
+
+        /* Animation Three */
+        .three span {
+            color: #c4cfde;
+            opacity: 0;
+            transform: translate(-300px, 0) scale(0);
+            animation: sideSlide .6s forwards ; /* Infinite loop added */
+        }
+
+        @keyframes sideSlide {
+            60% {
+                transform: translate(20px, 0) scale(1);
+                color: #c4cfde;
+            }
+
+            80% {
+                transform: translate(20px, 0) scale(1);
+                color: #c4cfde;
+            }
+
+            99% {
+                transform: translate(0) scale(1.2);
+                color: #ff014f;
+            }
+
+            100% {
+                transform: translate(0) scale(1);
+                opacity: 1;
+                color: #c4cfde;
+            }
+        }
