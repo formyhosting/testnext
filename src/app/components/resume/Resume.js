@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 // import Title from "../layouts/Title";
 import Education from "./Education";
 import Skills from "./Skills";
-import Achievement from './Achievement';
-import Experience from "./Experience"
+// import Achievement from './Achievement';
+// import Experience from "./Experience"
 import "./Resume.css";
 
 const Resume = () => {
@@ -15,10 +15,10 @@ const Resume = () => {
 
   useEffect(() => {
     const animateTitle = () => {
-      const title = document.querySelector('.myresume-title');
-      title.classList.remove('three');
+      const title = document.querySelector(".myresume-title");
+      title.classList.remove("three");
       void title.offsetWidth; // Trigger a reflow to restart the animation
-      title.classList.add('three');
+      title.classList.add("three");
     };
 
     // Trigger the animation every 2 seconds
@@ -37,7 +37,13 @@ const Resume = () => {
         {/* <Title title="" des="My Resume" /> */}
         <div className="myresume-title-container">
           <div className="myresume-title three">
-            <span>M</span><span>y</span>&nbsp;<span>R</span><span>e</span><span>s</span><span>u</span><span>m</span><span>e</span>
+            <span>M</span>
+            <span>y</span>&nbsp;<span>R</span>
+            <span>e</span>
+            <span>s</span>
+            <span>u</span>
+            <span>m</span>
+            <span>e</span>
           </div>
         </div>
       </div>

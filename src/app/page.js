@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import LoadingScreen from "./LoadingScreen";
+import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
 import Banner from "./components/banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/ProjectsSilder/Projects";
@@ -28,20 +28,22 @@ export default function Home() {
       {isLoading ? (
         <LoadingScreen />
       ) : (
-        <div className="max-w-screen-xl mx-auto">
-          <AnimatedCircles />
+        <div>
           <Navbar />
-          <ChatBot />
-          <ResumeButton />
-          <CircleCursor />
-          <Banner />
-          <Features />
-          <Projects />
-          <Resume />
-          <Certificate />
-          <Contact />
-          <UserInfo />
-          <FooterBottom />
+          <div className="max-w-screen-xl mx-auto">
+            <AnimatedCircles />
+            <ChatBot />
+            <ResumeButton />
+            <CircleCursor />
+            <Banner />
+            <Features />
+            <Projects />
+            <Resume />
+            <Certificate />
+            <Contact />
+            <UserInfo />
+            <FooterBottom />
+          </div>
         </div>
       )}
     </main>
