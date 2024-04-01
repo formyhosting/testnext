@@ -11,11 +11,11 @@ import Contact from "./components/contact/Contact";
 import UserInfo from "./components/userInfo/userInfo";
 import FooterBottom from "./components/footer/FooterBottom";
 import CircleCursor from "./components/CursorAnimation/CircleCursor/CircleCursor";
+import AnimatedCircles from "./components/BackRound/AnimatedCircles/AnimatedCircles";
 import ResumeButton from "./components/ResumeButton/ResumeButton";
 import ChatBot from "./components/ChatBot/ChatBot";
 
 export default function Home() {
-
   const [isLoading, setIsLoading] = useState(true);
 
   // Simulate loading time
@@ -29,7 +29,7 @@ export default function Home() {
         <LoadingScreen />
       ) : (
         <div className="max-w-screen-xl mx-auto">
-          {/* Your main content */}
+          <AnimatedCircles />
           <Navbar />
           <ChatBot />
           <ResumeButton />
