@@ -11,7 +11,6 @@ import Contact from "./components/contact/Contact";
 import UserInfo from "./components/userInfo/userInfo";
 import FooterBottom from "./components/footer/FooterBottom";
 import CircleCursor from "./components/CursorAnimation/CircleCursor/CircleCursor";
-import AnimatedCircles from "./components/BackRound/AnimatedCircles/AnimatedCircles";
 import ResumeButton from "./components/ResumeButton/ResumeButton";
 import ChatBot from "./components/ChatBot/ChatBot";
 
