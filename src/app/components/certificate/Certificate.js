@@ -53,7 +53,7 @@ const Certificate = () => {
             "#c4cfde",
             "#ff014f",
         ],
-        // Other configuration options
+        
       });
     };
 
@@ -77,12 +77,41 @@ const Certificate = () => {
       id="certificate"
       className="w-full py-20 border-b-[1px] border-b-black"
     >
-      <div className="flex justify-center items-center text-center">
+       <div className="flex justify-center items-center text-center">
         <div className="Certificate-heading-Container w-full ">
           <div className="Certificate-heading" id="Certificate-heading-one">
             C
           </div>
-          {/* Other letters */}
+          <div className="Certificate-heading" id="Certificate-heading-two">
+            e
+          </div>
+          <div className="Certificate-heading" id="Certificate-heading-two">
+            r
+          </div>
+          <div className="Certificate-heading" id="Certificate-heading-two">
+            t
+          </div>
+          <div className="Certificate-heading" id="Certificate-heading-four">
+            i
+          </div>
+          <div className="Certificate-heading" id="Certificate-heading-three">
+            f
+          </div>
+          <div className="Certificate-heading" id="Certificate-heading-two">
+            i
+          </div>
+          <div className="Certificate-heading" id="Certificate-heading-two">
+            c
+          </div>
+          <div className="Certificate-heading" id="Certificate-heading-four">
+            a
+          </div>
+          <div className="Certificate-heading" id="Certificate-heading-two">
+            t
+          </div>
+          <div className="Certificate-heading" id="Certificate-heading-four">
+            es
+          </div>
         </div>
       </div>
       <Slider {...sliderSettings} ref={sliderRef} className="relative">
