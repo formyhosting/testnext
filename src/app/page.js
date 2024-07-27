@@ -14,6 +14,7 @@ import CircleCursor from "./components/CursorAnimation/CircleCursor/CircleCursor
 import AnimatedCircles from "./components/BackRound/AnimatedCircles/AnimatedCircles";
 import ResumeButton from "./components/ResumeButton/ResumeButton";
 import ChatBot from "./components/ChatBot/ChatBot";
+import SecurityRecognition from "./components/SecurityRecognition/SecurityRecognition"; // Import the SecurityRecognition component
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,6 +37,7 @@ export default function Home() {
             <ResumeButton />
             <CircleCursor />
             <Banner />
+            <SecurityRecognition />
             <Features />
             <Projects />
             <Resume />

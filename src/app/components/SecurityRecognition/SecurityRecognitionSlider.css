@@ -1,0 +1,16 @@
+
+.company-logos-slider {
+    overflow: hidden;
+  }
+  
+  .company-logos-slider .logo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .company-logos-slider .logo-item img {
+    max-height: 100px; /* Adjust as needed */
+    object-fit: contain;
+  }
