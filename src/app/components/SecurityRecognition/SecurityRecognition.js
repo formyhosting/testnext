@@ -34,12 +34,13 @@ const SecurityRecognition = () => {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
     ],
@@ -67,19 +68,19 @@ const SecurityRecognition = () => {
   }, []);
 
   return (
-    <section id="security-recognition" className="w-full py-20 bg-bodyColor border-b-[1px] border-b-black">
-      <div className="text-center mb-8">
-        <h2 className="text-4xl font-titleFont font-bold text-lightText mb-2">
+    <section id="security-recognition" className="w-full py-8 md:py-20 bg-bodyColor border-b-[1px] border-b-black">
+      <div className="text-center mb-6 md:mb-8">
+        <h2 className="text-2xl md:text-4xl font-titleFont font-bold text-lightText mb-2">
           Recognized By Over <span className="text-designColor">{recognizedCount} Leading Organizations</span>
         </h2>
-        <p className="text-lg text-lightText">
+        <p className="text-sm md:text-lg text-lightText">
           My dedicated efforts in cybersecurity have been recognized by numerous industry leaders worldwide. Here are some of the esteemed organizations that have acknowledged my contributions and expertise in enhancing their security posture.
         </p>
       </div>
       <Slider {...sliderSettings} ref={sliderRef} className="overflow-hidden">
         {logoData.map((logo, index) => (
-          <div key={index} className="flex justify-center items-center p-4">
-            <img src={logo} alt={`Organization Logo ${index + 1}`} className="max-h-24 object-contain" />
+          <div key={index} className="flex justify-center items-center p-2 md:p-4">
+            <img src={logo} alt={`Organization Logo ${index + 1}`} className="max-h-16 md:max-h-24 object-contain" />
           </div>
         ))}
       </Slider>
